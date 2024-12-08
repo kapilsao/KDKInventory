@@ -179,7 +179,7 @@ export default function AuthForm({ isSignUp }) {
         console.log('Sign-In Success:', response.data);
       }
       // Redirect to another page (e.g., dashboard)
-      navigate('/dashboard'); // Change '/dashboard' to your desired route
+      navigate('/inventory'); // Change '/dashboard' to your desired route
     } catch (error) {
       console.error('Error:', error.response?.data || error.message);
     }
