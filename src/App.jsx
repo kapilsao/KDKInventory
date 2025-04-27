@@ -22,6 +22,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AuthForm from './pages/AuthForm';
 import Inventory from './pages/Inventory';
+import User_Management  from './pages/member';
+import Main from './pages/Main';
+import Dashboard from './pages/Dashboard';
 
 export default function App() {
   return (
@@ -31,8 +34,16 @@ export default function App() {
         <Route path="/signin" element={<AuthForm isSignUp={false} />} /> {/* Sign In */}
         <Route path="/signup" element={<AuthForm isSignUp={true} />} /> {/* Sign Up */}
         <Route path="/inventory" element={<Inventory/>} />
+        <Route path="/User_Management" element={<User_Management/>} />
+        <Route path="/main" element={<Main/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+
       </Routes>
     </Router>
+
+
+
+   
   );
 }
 
